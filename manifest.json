@@ -1,0 +1,48 @@
+{
+  "name": "https detect",
+  "version": "0.1",
+  "description": "https detect",
+  "icons": {
+    "16": "https.png",
+    "32": "https.png",
+    "48": "https.png",
+    "128": "https.png"
+  },
+  "browser_action": {
+    "default_icon": "https.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "commands": {
+    "toggle-tags": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "mac": "MacCtrl+S"
+      },
+      "description": "Toggle Tags"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "manifest_version": 2
+}

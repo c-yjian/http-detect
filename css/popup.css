@@ -1,0 +1,70 @@
+.fl{
+    float: left;
+}
+.hide{
+    display: none !important;
+}
+.container{
+    padding-left: 15px;
+    width: 500px;
+    min-height: 90px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.http-wrap{
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.http-item{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    line-height: 20px;
+    height: 20px;
+    width: 450px;
+    overflow: hidden;
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+    cursor: pointer;
+}
+.no-http-txt{
+    text-align: center;
+    font-size: 18px;
+    color: rgb(51, 137, 255);
+}
+
+.btn-container{
+    margin: 20px auto;
+    overflow: hidden;
+}
+.btn-wrap{
+    float: left;
+    text-align: center;
+    background: rgb(51, 137, 255);
+    color: #fff;
+    border-radius: 8px;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+.excel{
+    padding: 3px 8px;
+}
+
+.count-wrap{
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 36px;
+    margin-right: 50px;
+}
+
+.http-count{
+    font-size: 14px;
+    color: red;
+}
